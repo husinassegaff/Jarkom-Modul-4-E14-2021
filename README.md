@@ -12,13 +12,15 @@
 
 A. Jawaban
 
-- [Topologi](#)
-- [A. VSLM](#)
-  - [1. Subnetting](#)
-  - [2. Routing](#)
-- [B. CIDR](#)
-  - [1. Subnetting](#)
-  - [2. Routing](#)
+- [A. Topologi](#a-topologi)
+- [B. VSLM pada CPT](#b-vlsm-pada-cpt)
+  - [1. VLSM Subnetting](#1-vlsm-subnetting)
+  - [2. VLSM Routing](#2-vlsm-routing)
+  - [3. VLSM Testing](#3-vlsm-testing)
+- [C. CIDR pada GNS3](#c-cidr-pada-gns3)
+  - [1. CIDR Subnetting](#1-cidr-subnetting)
+  - [2. CIDR Routing](#2-cidr-routing)
+  - [3. CIDR Testing](#3-cidr-testing)
 
 B. Kendala
 
@@ -26,12 +28,19 @@ B. Kendala
 
 ---
 
-## Prefix IP
+## A. Topologi
 
-Prefix IP Address kelompok kami adalah `10.36`
-
-## Persiapan
-
-Membuat topologi sebagai berikut
-
+Pembagian IP menggunakan Prefix IP yang telah ditentukan pada modul pengenalan. Prefix IP Address kelompok E14 kami adalah `10.36`. <br>
 ![topologi](img/topologi.png)
+
+## B. VLSM pada CPT
+
+** 1. VLSM Subnetting **
+** 2. VLSM Routing **
+** 3. VLSM Testing **
+
+## B. CIDR pada GNS3
+
+** 1. CIDR Subnetting **
+** 2. CIDR Routing **
+** 3. CIDR Testing **
