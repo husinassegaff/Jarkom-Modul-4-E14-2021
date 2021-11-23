@@ -43,6 +43,7 @@ Pembagian IP menggunakan Prefix IP yang telah ditentukan pada modul pengenalan. 
 **2. VLSM Routing**<br>
      a. Foosha<br>
      Jalankan command berikut pada cmd router Foosha.
+     
           ```
           ip route 10.36.27.0 255.255.255.128 10.36.27.150
           ip route 10.36.16.0 255.255.252.0 10.36.27.150
