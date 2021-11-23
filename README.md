@@ -35,7 +35,7 @@ Pembagian IP menggunakan Prefix IP yang telah ditentukan pada modul pengenalan. 
 
 ## B. VLSM pada CPT
 
-**1. VLSM Subnetting**<br>
+   **1. VLSM Subnetting**<br>
      Berdasarkan topologi, ditemukan 15 subnet termasuk subnet untuk server dan router. Polanya seperti yang terlihat pada gambar di bawah ini. Selain itu ditambahkan juga besar netmask dari subnet tersebut berdasarkan jumlah ip yang dibutuhkan masing-masing subnet.
      <br> 
      ![alt_text](img/vlsm-subnetting.PNG)
@@ -43,7 +43,7 @@ Pembagian IP menggunakan Prefix IP yang telah ditentukan pada modul pengenalan. 
      Pembagian IP menggunakan teknik VLSM memang tidak fleksible namun dalam pemakaian ip cukup efisien. Caranya terlihat seperti gambar di bawah ini.
      <br>
      ![alt_text](img/vlsm-ip-arr.PNG)<br>
-**2. VLSM Routing**<br>
+   **2. VLSM Routing**<br>
      a. Foosha<br>
      Jalankan command berikut pada cmd router Foosha.
      
