@@ -41,37 +41,35 @@ Pembagian IP menggunakan Prefix IP yang telah ditentukan pada modul pengenalan. 
      Pembagian IP menggunakan teknik VLSM memang tidak fleksible namun dalam pemakaian ip cukup efisien. Caranya terlihat seperti gambar di bawah ini.
      ![alt_text](img/vlsm-ip-arr.PNG)<br>
 **2. VLSM Routing**<br>
-     a. Foosha
-        Jalankan command berikut pada cmd router Foosha.
-        ```
-        ip route 10.36.27.0 255.255.255.128 10.36.27.150
-        ip route 10.36.16.0 255.255.252.0 10.36.27.150
-        ip route 10.36.0.0 255.255.248.0 10.36.27.150
-        ip route 10.36.20.0 255.255.252.0 10.36.27.154
-        ip route 10.36.24.0 255.255.254.0 10.36.27.154
-        ip route 10.36.27.128 255.255.255.240 10.36.27.154
-        ip route 10.36.26.0 255.255.255.0 10.36.27.154
-        ip route 10.36.12.0 255.255.252.0 10.36.27.154
-        ip route 10.36.27.164 255.255.255.252 10.36.27.154
-        ```
-        <br>
-     b. Water7<br>
-        Jalankan command berikut pada cmd router Water7.
+     a. Foosha<br>
+     Jalankan command berikut pada cmd router Foosha.
+          ```
+          ip route 10.36.27.0 255.255.255.128 10.36.27.150
+          ip route 10.36.16.0 255.255.252.0 10.36.27.150
+          ip route 10.36.0.0 255.255.248.0 10.36.27.150
+          ip route 10.36.20.0 255.255.252.0 10.36.27.154
+          ip route 10.36.24.0 255.255.254.0 10.36.27.154
+          ip route 10.36.27.128 255.255.255.240 10.36.27.154
+          ip route 10.36.26.0 255.255.255.0 10.36.27.154
+          ip route 10.36.12.0 255.255.252.0 10.36.27.154
+          ip route 10.36.27.164 255.255.255.252 10.36.27.154
+          ```
         
+  b. Water7<br>
+     Jalankan command berikut pada cmd router Water7.
         ```
         ip route 0.0.0.0 0.0.0.0 10.36.27.149			          #FOOSHA
         ip route 10.36.27.0 255.255.255.128 10.36.27.146	  #A1
         ip route 10.36.0.0 255.255.248.0 10.36.27.146		    #A4
         ```
         
-     c. Pucci<br>
-        Jalankan command berikut pada cmd router Pucci.<br>
-        
+  c. Pucci<br>
+     Jalankan command berikut pada cmd router Pucci.<br>
         ```
           ip route 0.0.0.0 0.0.0.0 10.36.27.145			          #WATER7
         ```
-        <br>
-     d. Guanhao<br>
+        
+  d. Guanhao<br>
         Jalankan command berikut pada cmd router Pucci.<br>
         ```
           ip route 0.0.0.0 0.0.0.0 10.36.27.149			          #FOOSHA
@@ -80,21 +78,21 @@ Pembagian IP menggunakan Prefix IP yang telah ditentukan pada modul pengenalan. 
           ip route 10.36.12.0 255.255.252.0 10.36.27.158		  #A11
           ip route 10.36.27.164 255.255.255.252 10.36.27.158	#A15
         ```
-        <br>
-     e. Alabasta<br>
+        
+  e. Alabasta<br>
         Jalankan command berikut pada cmd router Alabasta.<br>
         ```
         ip route 0.0.0.0 0.0.0.0 10.36.24.1			            #GUANHAO
         ```
-        <br>
-     f. Oimo<br>
+
+  f. Oimo<br>
         Jalankan command berikut pada cmd router Oimo.<br>
         ```
         ip route 0.0.0.0 0.0.0.0 10.36.24.1			            #GUANHAO
         ip route 10.36.12.0 255.255.252.0 10.36.26.2		    #A11
         ```
-        <br>
-     g. Seastone<br>
+
+  g. Seastone<br>
         Jalankan command berikut pada cmd router Seastone.<br>
         ```
         ip route 0.0.0.0 0.0.0.0 10.36.26.1			            #OIMO
