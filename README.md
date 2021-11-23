@@ -35,12 +35,12 @@ Pembagian IP menggunakan Prefix IP yang telah ditentukan pada modul pengenalan. 
 
 ## B. VLSM pada CPT
 
-** 1. VLSM Subnetting **
-** 2. VLSM Routing **
-** 3. VLSM Testing **
+**1. VLSM Subnetting**
+**2. VLSM Routing**
+**3. VLSM Testing**
 
 ## B. CIDR pada GNS3
 
-** 1. CIDR Subnetting **
-** 2. CIDR Routing **
-** 3. CIDR Testing **
+**1. CIDR Subnetting**
+**2. CIDR Routing**
+**3. CIDR Testing**
