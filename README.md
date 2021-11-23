@@ -16,11 +16,9 @@ A. Jawaban
 - [B. VSLM pada CPT](#b-vlsm-pada-cpt)
   - [1. VLSM Subnetting](#1-vlsm-subnetting)
   - [2. VLSM Routing](#2-vlsm-routing)
-  - [3. VLSM Testing](#3-vlsm-testing)
 - [C. CIDR pada GNS3](#c-cidr-pada-gns3)
   - [1. CIDR Subnetting](#1-cidr-subnetting)
   - [2. CIDR Routing](#2-cidr-routing)
-  - [3. CIDR Testing](#3-cidr-testing)
 
 B. Kendala
 
@@ -99,11 +97,8 @@ Pembagian IP menggunakan Prefix IP yang telah ditentukan pada modul pengenalan. 
      
      ip route 0.0.0.0 0.0.0.0 10.36.26.1			    #OIMO
     
-        
-**3. VLSM Testing**<br>
 
 ## B. CIDR pada GNS3
 
 **1. CIDR Subnetting**<br>
 **2. CIDR Routing**<br>
-**3. CIDR Testing**<br>
