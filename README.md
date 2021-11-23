@@ -60,7 +60,7 @@ Pembagian IP menggunakan Prefix IP yang telah ditentukan pada modul pengenalan. 
   b. Water7<br>
      Jalankan command berikut pada cmd router Water7.
         
-     ip route 0.0.0.0 0.0.0.0 10.36.27.149			      #FOOSHA
+     ip route 0.0.0.0 0.0.0.0 10.36.27.149			    #FOOSHA
      ip route 10.36.27.0 255.255.255.128 10.36.27.146	    #A1
      ip route 10.36.0.0 255.255.248.0 10.36.27.146		    #A4
         
@@ -68,36 +68,36 @@ Pembagian IP menggunakan Prefix IP yang telah ditentukan pada modul pengenalan. 
   c. Pucci<br>
      Jalankan command berikut pada cmd router Pucci.<br>
      
-     ip route 0.0.0.0 0.0.0.0 10.36.27.145			      #WATER7
+     ip route 0.0.0.0 0.0.0.0 10.36.27.145			    #WATER7
      
         
   d. Guanhao<br>
         Jalankan command berikut pada cmd router Pucci.<br>
      
-     ip route 0.0.0.0 0.0.0.0 10.36.27.149			      #FOOSHA
+     ip route 0.0.0.0 0.0.0.0 10.36.27.149			    #FOOSHA
      ip route 10.36.27.128 255.255.255.240 10.36.24.2	    #A13
      ip route 10.36.26.0 255.255.255.0 10.36.27.158		    #A8
      ip route 10.36.12.0 255.255.252.0 10.36.27.158		    #A11
-     ip route 10.36.27.164 255.255.255.252 10.36.27.158  	#A15
+     ip route 10.36.27.164 255.255.255.252 10.36.27.158  	  #A15
      
         
   e. Alabasta<br>
      Jalankan command berikut pada cmd router Alabasta.<br>
     
-     ip route 0.0.0.0 0.0.0.0 10.36.24.1			        #GUANHAO
+     ip route 0.0.0.0 0.0.0.0 10.36.24.1			      #GUANHAO
     
 
   f. Oimo<br>
      Jalankan command berikut pada cmd router Oimo.<br>
     
-     ip route 0.0.0.0 0.0.0.0 10.36.24.1			        #GUANHAO
+     ip route 0.0.0.0 0.0.0.0 10.36.24.1			      #GUANHAO
      ip route 10.36.12.0 255.255.252.0 10.36.26.2		      #A11
      
 
   g. Seastone<br>
      Jalankan command berikut pada cmd router Seastone.<br>
      
-     ip route 0.0.0.0 0.0.0.0 10.36.26.1			        #OIMO
+     ip route 0.0.0.0 0.0.0.0 10.36.26.1			      #OIMO
     
         
 **3. VLSM Testing**<br>
