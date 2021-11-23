@@ -36,23 +36,26 @@ Pembagian IP menggunakan Prefix IP yang telah ditentukan pada modul pengenalan. 
 ## B. VLSM pada CPT
 
 **1. VLSM Subnetting**<br>
-     Berdasarkan topologi, ditemukan 15 subnet termasuk subnet untuk server dan router. Polanya seperti yang terlihat pada gambar di bawah ini. Selain itu ditambahkan juga besar netmask dari subnet tersebut berdasarkan jumlah ip yang dibutuhkan masing-masing subnet.<br> 
-     ![alt_text](img/vlsm-subnetting.PNG)<br>
+     Berdasarkan topologi, ditemukan 15 subnet termasuk subnet untuk server dan router. Polanya seperti yang terlihat pada gambar di bawah ini. Selain itu ditambahkan juga besar netmask dari subnet tersebut berdasarkan jumlah ip yang dibutuhkan masing-masing subnet.
+     <br> 
+     ![alt_text](img/vlsm-subnetting.PNG)
+     <br>
      Pembagian IP menggunakan teknik VLSM memang tidak fleksible namun dalam pemakaian ip cukup efisien. Caranya terlihat seperti gambar di bawah ini.
+     <br>
      ![alt_text](img/vlsm-ip-arr.PNG)<br>
 **2. VLSM Routing**<br>
      a. Foosha<br>
      Jalankan command berikut pada cmd router Foosha.
      
-          ip route 10.36.27.0 255.255.255.128 10.36.27.150
-          ip route 10.36.16.0 255.255.252.0 10.36.27.150
-          ip route 10.36.0.0 255.255.248.0 10.36.27.150
-          ip route 10.36.20.0 255.255.252.0 10.36.27.154
-          ip route 10.36.24.0 255.255.254.0 10.36.27.154
-          ip route 10.36.27.128 255.255.255.240 10.36.27.154
-          ip route 10.36.26.0 255.255.255.0 10.36.27.154
-          ip route 10.36.12.0 255.255.252.0 10.36.27.154
-          ip route 10.36.27.164 255.255.255.252 10.36.27.154
+     ip route 10.36.27.0 255.255.255.128 10.36.27.150
+     ip route 10.36.16.0 255.255.252.0 10.36.27.150
+     ip route 10.36.0.0 255.255.248.0 10.36.27.150
+     ip route 10.36.20.0 255.255.252.0 10.36.27.154
+     ip route 10.36.24.0 255.255.254.0 10.36.27.154
+     ip route 10.36.27.128 255.255.255.240 10.36.27.154
+     ip route 10.36.26.0 255.255.255.0 10.36.27.154
+     ip route 10.36.12.0 255.255.252.0 10.36.27.154
+     ip route 10.36.27.164 255.255.255.252 10.36.27.154
         
   b. Water7<br>
      Jalankan command berikut pada cmd router Water7.
