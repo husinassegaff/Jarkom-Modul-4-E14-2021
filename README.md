@@ -36,6 +36,8 @@ Pembagian IP menggunakan Prefix IP yang telah ditentukan pada modul pengenalan. 
 ## B. VLSM pada CPT
 
 **1. VLSM Subnetting**<br>
+![alt_text](img/vlsm-subnetting.PNG)<br>
+![alt_text](img/vlsm-ip-arr.PNG)<br>
 **2. VLSM Routing**<br>
 **3. VLSM Testing**<br>
 
