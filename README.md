@@ -31,7 +31,7 @@ B. Kendala
 ## A. Topologi
 
 Pembagian IP menggunakan Prefix IP yang telah ditentukan pada modul pengenalan. Prefix IP Address kelompok E14 kami adalah `10.36`. <br>
-![topologi](img/topologi.png)
+![topologi](img/topologi.PNG)
 
 ## B. VLSM pada CPT
 
