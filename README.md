@@ -41,7 +41,7 @@ Berdasarkan topologi, ditemukan 15 subnet termasuk subnet untuk server dan route
 Pembagian IP menggunakan teknik VLSM memang tidak fleksible namun dalam pemakaian ip cukup efisien. Caranya terlihat seperti gambar di bawah ini.
 ![alt_text](img/vlsm-ip-arr.PNG)<br>
 **2. VLSM Routing**<br>
-     a. Foosha
+     a. Foosha<br>
         ```
         ip route 10.36.27.0 255.255.255.128 10.36.27.150	  #A1
         ip route 10.36.16.0 255.255.252.0 10.36.27.150		  #A2
@@ -52,38 +52,38 @@ Pembagian IP menggunakan teknik VLSM memang tidak fleksible namun dalam pemakaia
         ip route 10.36.26.0 255.255.255.0 10.36.27.154		  #A8
         ip route 10.36.12.0 255.255.252.0 10.36.27.154		  #A11
         ip route 10.36.27.164 255.255.255.252 10.36.27.154	#A15
-        ```
-     b. Water7
+        ```<br>
+     b. Water7<br>
         ```
         ip route 0.0.0.0 0.0.0.0 10.36.27.149			          #FOOSHA
         ip route 10.36.27.0 255.255.255.128 10.36.27.146	  #A1
         ip route 10.36.0.0 255.255.248.0 10.36.27.146		    #A4
         ```
-     c. Pucci
+     c. Pucci<br>
         ```
         ip route 0.0.0.0 0.0.0.0 10.36.27.145			          #WATER7
-        ```
-     d. Guanhao
+        ```<br>
+     d. Guanhao<br>
         ```
         ip route 0.0.0.0 0.0.0.0 10.36.27.149			          #FOOSHA
         ip route 10.36.27.128 255.255.255.240 10.36.24.2	  #A13
         ip route 10.36.26.0 255.255.255.0 10.36.27.158		  #A8
         ip route 10.36.12.0 255.255.252.0 10.36.27.158		  #A11
         ip route 10.36.27.164 255.255.255.252 10.36.27.158	#A15
-        ```
-     e. Alabasta
+        ```<br>
+     e. Alabasta<br>
         ```
         ip route 0.0.0.0 0.0.0.0 10.36.24.1			            #GUANHAO
-        ```
-     f. Oimo
+        ```<br>
+     f. Oimo<br>
         ```
         ip route 0.0.0.0 0.0.0.0 10.36.24.1			            #GUANHAO
         ip route 10.36.12.0 255.255.252.0 10.36.26.2		    #A11
-        ```
-     g. Seastone
+        ```<br>
+     g. Seastone<br>
         ```
         ip route 0.0.0.0 0.0.0.0 10.36.26.1			            #OIMO
-        ```
+        ```<br>
 **3. VLSM Testing**<br>
 
 ## B. CIDR pada GNS3
