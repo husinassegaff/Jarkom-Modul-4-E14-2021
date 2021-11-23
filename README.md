@@ -100,5 +100,143 @@ Pembagian IP menggunakan Prefix IP yang telah ditentukan pada modul pengenalan. 
 
 ## B. CIDR pada GNS3
 
-**1. CIDR Subnetting**<br>
+   **1. CIDR Subnetting**<br>
+         Berikut proses penggabungan subnet-subnet dari paling bawah pada topologi:
+         ![langkah-1](img/CIDR/langkah-1.jpg)
+         ![langkah-2](img/CIDR/langkah-2.jpg)
+         ![langkah-3](img/CIDR/langkah-3.jpg)
+         ![langkah-4](img/CIDR/langkah-4.jpg)
+         ![langkah-5](img/CIDR/langkah-5.jpg)
+         ![langkah-6](img/CIDR/langkah-6.jpg)
+         ![langkah-7](img/CIDR/langkah-7.jpg)
+         ![langkah-8](img/CIDR/langkah-8.jpg)
+         ![langkah-9](img/CIDR/langkah-9.jpg)
+         Dari pengelompokan subnet tersebut didapatkan subnet terbesar memiliki 15 bit, sehingga pohon pembagian IP dapat dibuat menjadi sebagai berikut:
+         ![pohon](img/CIDR/pohon.jpg)
+         Setelah didapatkan IP pada setiap subnet paling bawah, maka dicari netmask dan broadcast pada setiap subnet tersebut. Hasilnya sebagai berikut,
+         <table>
+            <thead>
+               <tr>
+                     <th  style="text-align: center;">Subnet</th>
+                     <th  style="text-align: center;">Bit</th>
+                     <th  style="text-align: center;">Network ID</th>
+                     <th  style="text-align: center;">Netmask</th>
+                     <th  style="text-align: center;">Broadcast Address</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                     <td  style="text-align: center;">A1</td>
+                     <td  style="text-align: center;">/25</td>
+                     <td  style="text-align: center;">10.37.8.0</td>
+                     <td  style="text-align: center;">255.255.255.128</td>
+                     <td  style="text-align: center;">10.37.8.127</td>
+               </tr>
+                  <tr>
+                     <td  style="text-align: center;">A2</td>
+                     <td  style="text-align: center;">/22</td>
+                     <td  style="text-align: center;">10.37.32.0</td>
+                     <td  style="text-align: center;">255.255.255.0</td>
+                     <td  style="text-align: center;">10.37.35.255</td>
+               </tr>
+                  <tr>
+                     <td  style="text-align: center;">A3</td>
+                     <td  style="text-align: center;">/30</td>
+                     <td  style="text-align: center;">10.37.16.0</td>
+                     <td  style="text-align: center;">255.255.255.252</td>
+                     <td  style="text-align: center;">10.37.16.3</td>
+               </tr>
+                  <tr>
+                     <td  style="text-align: center;">A4</td>
+                     <td  style="text-align: center;">/21</td>
+                     <td  style="text-align: center;">10.37.0.0</td>
+                     <td  style="text-align: center;">255.255.248.0</td>
+                     <td  style="text-align: center;">10.37.7.255</td>
+               </tr>
+                  <tr>
+                     <td  style="text-align: center;">A5</td>
+                     <td  style="text-align: center;">/22</td>
+                     <td  style="text-align: center;">10.37.128.0</td>
+                     <td  style="text-align: center;">255.255.252.0</td>
+                     <td  style="text-align: center;">10.37.131.255</td>
+               </tr>
+                  <tr>
+                     <td  style="text-align: center;">A6</td>
+                     <td  style="text-align: center;">/30</td>
+                     <td  style="text-align: center;">10.37.64.0</td>
+                     <td  style="text-align: center;">255.255.255.252</td>
+                     <td  style="text-align: center;">10.37.64.3</td>
+               </tr>
+               <tr>
+                     <td  style="text-align: center;">A6</td>
+                     <td  style="text-align: center;">/30</td>
+                     <td  style="text-align: center;">10.37.64.0</td>
+                     <td  style="text-align: center;">255.255.255.252</td>
+                     <td  style="text-align: center;">10.37.64.3</td>
+               </tr>
+               <tr>
+                     <td  style="text-align: center;">A7</td>
+                     <td  style="text-align: center;">/22</td>
+                     <td  style="text-align: center;">10.36.36.0</td>
+                     <td  style="text-align: center;">255.255.252.0</td>
+                     <td  style="text-align: center;">10.36.39.255</td>
+               </tr>
+               <tr>
+                     <td  style="text-align: center;">A8</td>
+                     <td  style="text-align: center;">/24</td>
+                     <td  style="text-align: center;">10.36.4.0</td>
+                     <td  style="text-align: center;">255.255.255.0</td>
+                     <td  style="text-align: center;">10.36.4.255</td>
+               </tr>
+               <tr>
+                     <td  style="text-align: center;">A9</td>
+                     <td  style="text-align: center;">/22</td>
+                     <td  style="text-align: center;">10.36.0.0</td>
+                     <td  style="text-align: center;">255.255.252.0</td>
+                     <td  style="text-align: center;">10.36.3.255</td>
+               </tr>
+               <tr>
+                     <td  style="text-align: center;">A10</td>
+                     <td  style="text-align: center;">/30</td>
+                     <td  style="text-align: center;">10.36.64.0</td>
+                     <td  style="text-align: center;">255.255.255.252</td>
+                     <td  style="text-align: center;">10.36.64.3</td>
+               </tr>
+               <tr>
+                     <td  style="text-align: center;">A11</td>
+                     <td  style="text-align: center;">/30</td>
+                     <td  style="text-align: center;">10.36.16.0</td>
+                     <td  style="text-align: center;">255.255.255.252</td>
+                     <td  style="text-align: center;">10.36.16.3</td>
+               </tr>
+               <tr>
+                     <td  style="text-align: center;">A12</td>
+                     <td  style="text-align: center;">/30</td>
+                     <td  style="text-align: center;">10.36.128.0</td>
+                     <td  style="text-align: center;">255.255.255.252</td>
+                     <td  style="text-align: center;">10.36.128.3</td>
+               </tr>
+               <tr>
+                     <td  style="text-align: center;">A13</td>
+                     <td  style="text-align: center;">/23</td>
+                     <td  style="text-align: center;">10.36.32.0</td>
+                     <td  style="text-align: center;">255.255.254.0</td>
+                     <td  style="text-align: center;">10.36.33.255</td>
+               </tr>
+               <tr>
+                     <td  style="text-align: center;">A14</td>
+                     <td  style="text-align: center;">/30</td>
+                     <td  style="text-align: center;">10.36.8.0</td>
+                     <td  style="text-align: center;">255.255.255.252</td>
+                     <td  style="text-align: center;">10.36.8.3</td>
+               </tr>
+               <tr>
+                     <td  style="text-align: center;">A15</td>
+                     <td  style="text-align: center;">/28</td>
+                     <td  style="text-align: center;">10.36.34.0</td>
+                     <td  style="text-align: center;">255.255.255.240</td>
+                     <td  style="text-align: center;">10.36.34.15</td>
+               </tr>
+            </tbody>
+         </table>
 **2. CIDR Routing**<br>
