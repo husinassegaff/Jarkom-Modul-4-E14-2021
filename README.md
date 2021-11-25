@@ -570,7 +570,6 @@ Setelah didapatkan IP pada setiap subnet paling bawah, maka dicari netmask dan b
 Pada router **Foosha** jalankan perintah berikut ini,
       
       iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 10.36.0.0/15
-      iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 10.37.0.0/16
 
 
 #### Setting resolv.conf
