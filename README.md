@@ -574,10 +574,32 @@ Pada router **Foosha** jalankan perintah berikut ini,
       
       iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 10.36.0.0/15
 
+#### Konfigurasi Router
+
+Untuk semua router, berdasarkan perhitungan CIDR ditambahkan jangakauan ipnya.
+
+- Guanhao
+```
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 10.36.0.0/17
+```
+
+- Oimo
+```
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 10.36.0.0/19
+```
+
+- Seastone
+```
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 10.36.0.0/22
+```
+
+- Water7
+- Pucci
+
 
 #### Setting resolv.conf
 
-Pada semua node selain Foosha, jalankan perintah berikut ini,
+Pada semua node selain Foosha (termasuk router-router lain), jalankan perintah berikut ini.
 
       echo nameserver 192.168.122.1 > /etc/resolv.conf
 
