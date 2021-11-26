@@ -368,7 +368,7 @@ Setelah didapatkan IP pada setiap subnet paling bawah, maka dicari netmask dan b
             netmask 255.255.255.240
       
 
-- Omo
+- Oimo
       
       auto eth0
       iface eth0 inet static
@@ -420,7 +420,7 @@ Setelah didapatkan IP pada setiap subnet paling bawah, maka dicari netmask dan b
       auto eth0
       iface eth0 inet static
             address 10.37.32.2
-            netmask 255.255.255.0
+            netmask 255.255.252.0
             gateway 10.37.32.1
       
 
@@ -429,7 +429,7 @@ Setelah didapatkan IP pada setiap subnet paling bawah, maka dicari netmask dan b
       
       auto eth0
       iface eth0 inet static
-            address 10.37.0.2
+            address 10.37.3.235
             netmask 255.255.248.0
             gateway 10.37.0.1
 
@@ -438,7 +438,7 @@ Setelah didapatkan IP pada setiap subnet paling bawah, maka dicari netmask dan b
       
       auto eth0
       iface eth0 inet static
-            address 10.37.0.3
+            address 10.37.0.2
             netmask 255.255.248.0
             gateway 10.37.0.1
       
@@ -468,7 +468,7 @@ Setelah didapatkan IP pada setiap subnet paling bawah, maka dicari netmask dan b
       
       auto eth0
       iface eth0 inet static
-            address 10.36.4.2
+            address 10.36.4.3
             netmask 255.255.255.0
             gateway 10.36.4.1
       
@@ -573,29 +573,6 @@ Setelah didapatkan IP pada setiap subnet paling bawah, maka dicari netmask dan b
 Pada router **Foosha** jalankan perintah berikut ini,
       
       iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 10.36.0.0/15
-
-#### Konfigurasi Router
-
-Ditambahkan jangkauan ip yang melewati masing-masing router berdasarkan perhitungan CIDR.
-
-- Guanhao
-```
-iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 10.36.0.0/17
-```
-
-- Oimo
-```
-iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 10.36.0.0/19
-```
-
-- Seastone
-```
-iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 10.36.0.0/22
-```
-
-- Water7
-- Pucci
-
 
 #### Setting resolv.conf
 
