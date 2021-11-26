@@ -106,7 +106,7 @@ Jalankan command berikut pada cmd router Seastone.
 ip route 0.0.0.0 0.0.0.0 10.36.26.1                         #OIMO
 ```
 
-## B. CIDR pada GNS3
+## C. CIDR pada GNS3
 
 ![topologi-gns3](img/topologi-gns3.png)
 
@@ -523,47 +523,48 @@ Setelah didapatkan IP pada setiap subnet paling bawah, maka dicari netmask dan b
 
 - Foosha
 
-      route add -net 10.37.8.0 netmask 255.255.255.128 gw 10.37.64.2          #A1
-      route add -net 10.37.32.0 netmask 255.255.252.0 gw 10.37.64.2           #A2
-      route add -net 10.37.16.0 netmask 255.255.255.252 gw 10.37.64.2         #A3
-      route add -net 10.37.0.0 netmask 255.255.248.0 gw 10.37.64.2            #A4
-      route add -net 10.36.36.0 netmask 255.255.252.0 gw 10.36.64.2           #A7
-      route add -net 10.36.4.0 netmask 255.255.255.0 gw 10.36.64.2            #A8
-      route add -net 10.36.0.0 netmask 255.255.252.0 gw 10.36.64.2            #A9
-      route add -net 10.36.16.0 netmask 255.255.255.252 gw 10.36.64.2         #A11
-      route add -net 10.36.32.0 netmask 255.255.254.0 gw 10.36.64.2           #A13
-      route add -net 10.36.8.0 netmask 255.255.255.252 gw 10.36.64.2          #A14
-      route add -net 10.36.34.0 netmask 255.255.255.240 gw 10.36.64.2         #A15
+      route add -net 10.37.8.0 netmask 255.255.255.128 gw 10.37.64.2          #A1-jipangu
+      route add -net 10.37.32.0 netmask 255.255.252.0 gw 10.37.64.2           #A2-cipher
+      route add -net 10.37.16.0 netmask 255.255.255.252 gw 10.37.64.2         #A3-pucci
+      route add -net 10.37.0.0 netmask 255.255.248.0 gw 10.37.64.2            #A4-calmbelt-courtyard
+      route add -net 10.36.36.0 netmask 255.255.252.0 gw 10.36.64.2           #A7-jabra
+      route add -net 10.36.4.0 netmask 255.255.255.0 gw 10.36.64.2            #A8-enieslobby
+      route add -net 10.36.0.0 netmask 255.255.252.0 gw 10.36.64.2            #A9-elena
+      route add -net 10.36.16.0 netmask 255.255.255.252 gw 10.36.64.2         #A11-oimo
+      route add -net 10.36.32.0 netmask 255.255.254.0 gw 10.36.64.2           #A13-maingate
+      route add -net 10.36.8.0 netmask 255.255.255.252 gw 10.36.64.2          #A14-fukurou
+      route add -net 10.36.34.0 netmask 255.255.255.240 gw 10.36.64.2         #A15-jorge
 
 - Water7
 
-      route add -net 10.37.8.0 netmask 255.255.255.128 gw 10.37.16.2          #A1
-      route add -net 10.37.0.0 netmask 255.255.248.0 gw 10.37.16.2            #A4
-      route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.37.64.1                    #A2
+      route add -net 10.37.8.0 netmask 255.255.255.128 gw 10.37.16.2          #A1-jipangu
+      route add -net 10.37.0.0 netmask 255.255.248.0 gw 10.37.16.2            #A4-calmbelt-courtyard
+      route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.37.64.1                    #default
 
 - Pucci
 
-      route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.37.16.1
-      route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.37.16.1
+      route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.37.16.1                    #default
 
 - Guanhao
 
-      route add -net 10.36.4.0 netmask 255.255.255.0 gw 10.36.16.2            #A8
-      route add -net 10.36.0.0 netmask 255.255.252.0 gw 10.36.16.2            #A9
-      route add -net 10.36.8.0 netmask 255.255.255.252 gw 10.36.16.2          #A14
-      route add -net 10.36.34.0 netmask 255.255.255.240 gw 10.36.32.2         #A15
+      route add -net 10.36.4.0 netmask 255.255.255.0 gw 10.36.16.2            #A8-enieslobby
+      route add -net 10.36.0.0 netmask 255.255.252.0 gw 10.36.16.2            #A9-elena
+      route add -net 10.36.8.0 netmask 255.255.255.252 gw 10.36.16.2          #A14-fukurou
+      route add -net 10.36.34.0 netmask 255.255.255.240 gw 10.36.32.2         #A15-jorge
+      route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.36.64.1                    #default
 
 - Alabasta
 
-      route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.36.32.1
+      route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.36.32.1                    #default
 
 - Oimo
 
-      route add -net 10.36.0.0 netmask 255.255.252.0 gw 10.36.4.2             #A9
+      route add -net 10.36.0.0 netmask 255.255.252.0 gw 10.36.4.2             #A9-elena
+      route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.36.16.1                    #default
 
 - Seastone
 
-      route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.36.0.1
+      route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.36.4.1                     #default
 
 #### Iptables Foosha
 
