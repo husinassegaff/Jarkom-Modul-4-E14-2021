@@ -576,7 +576,7 @@ Pada router **Foosha** jalankan perintah berikut ini,
 
 #### Konfigurasi Router
 
-Untuk semua router, berdasarkan perhitungan CIDR ditambahkan jangakauan ipnya.
+Ditambahkan jangkauan ip yang melewati masing-masing router berdasarkan perhitungan CIDR.
 
 - Guanhao
 ```
